@@ -80,7 +80,6 @@ export default {
         [this.cell3, this.cell5, this.cell7]
       ]
       return winning_examples_arr
-      // this.turn_validator(winning_examples_arr, this.current_player); // passing the array into the validator function;
     },
 
     turn_validator(current_player){
@@ -103,7 +102,7 @@ export default {
 
     switch_player(){
       this.player = !this.player;
-      this.current_player = this.player ? "O" : "X";
+      this.current_player = this.player ? "O": "X";
     },
 
     game_system(event) { 
@@ -119,7 +118,7 @@ export default {
 </script>
 
 <style scoped>
-:root{
+: root{
   --border-board:8px solid #41b883;
 }
 
@@ -141,7 +140,7 @@ template{
 }
 
 .X{
-  color:red;
+  color: red;
 }
 
 .O{
